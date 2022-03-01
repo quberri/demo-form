@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+.survey__container {
+    border: 2.5px solid lightslategrey; 
+    width: 80%; 
+    margin: auto;   
+    text-align: left;
+    padding: 1rem;
+    background-color: cadetblue;
+    overflow:hidden;
+}
+.form__header {
+    color: black; 
+    text-align: center;
+}
+#form_grats {
+    text-align: center;
+    color:darkolivegreen;
+    font-weight: normal;
+}
+p {
+    color: black;
+    font-weight:bold;
+}
+.submit__btn {
+   transform: translateX(8rem);
+}
+.submit__btn input { 
+    background-color: darkolivegreen;
+    color: White;
+}
+.submit__btn input:hover {
+    background-color: darkgreen;
+}

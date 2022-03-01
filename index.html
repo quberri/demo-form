@@ -6,88 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>EMPLOYEE SATISFACTION SURVEY
     </title>
+    <link rel="stylesheet" href="file2.css">
 </head>
-<body style="contain: content; 
-border: 2.5px solid lightslategrey; 
-width: 60%; margin: auto; 
-background-color:rgb(235, 228, 135); text-align: start;
-padding: 2.5rem;"
->
-<form>
-    <h1 style="color: black; text-align: center;"><b>
-        Employee Satistfaction Survey
-    </b>
-    </h1>
-    <p style="color:rgb(2, 2, 31)"><i>Thanks for taking the time to fill this survey.</i></p>
-<hr>
-    <label><b>Name</b></label><br/>
-        <span><input type="text" placeholder="Enter First Name"/></span> 
-          <span><input type="text" placeholder="Enter Last Name"/></span> 
-<br/>
-<br/>
-    <div><label><b>Date</b></label><br/><input type="date"></div>
-</form>
-<br/>
-<form >
-    <p style="color:darkblue"><b>How would you describe your level of satisfaction with the job?</b></p>
-            <div><input name="btn" type="radio" class="inputRadio"checked/>Very satisfied</div>
-                <div><input name="btn" type="radio" class="inputRadio"checked/>Sometimes satisfied</div>
-                    <div><input name="btn" type="radio" class="inputRadio"checked/>Neutral</div>
-                        <div><input name="btn" type="radio" class="inputRadio"checked/>Sometimes dissatisfied</div>
-                            <div><input name="btn" type="radio" class="inputRadio"checked/>Very dissatisfied</div>
-</form>
-<form>
-        <p style="color:darkblue"><b>Do you feel valued at work?</b></p>
-            <input name="btn" type="radio" class="inputRadio"checked/>Yes
-                <input name="btn" type="radio" class="inputRadio"checked/>No
-</form>
-    <p style="color:darkblue"><b>If no, Please Explain</b></p>
-<form>
-        <textarea
-        cols="50";
-        rows="5":>
-type here
+<body>
+<div class="survey__container">
+    <div>
+        <h1 class="form__header">Employee Satistfaction Survey
+        </h1>
+        <p id="form_grats"><em>Thanks for taking the time to fill this survey.</em>
+        </p>
+    </div><hr>
+    <div class="info">
+        <label>First Name</label><br/>
+        <span><input type="text" placeholder="Enter First Name"/></span><br/>
+        <label>Last Name</label><br/><input type="text" placeholder="Enter Last Name"/><br/>
+        <label>Date</label><br/>
+        <input type="date"><br/>
+    </div>
+    <div class="stf__level">
+        <p>How would you describe your level of satisfaction with the job?
+        </p>
+        <form action="#">
+            <input name="btn" type="radio"/><label>Very satisfied</label><br/>
+            <input name="btn" type="radio"/><label>Sometimes satisfied</label><br/>
+            <input name="btn" type="radio"/><label>Neutral</label><br/>
+            <input name="btn" type="radio"/><label>Sometimes dissatisfied</label><br/>
+            <input name="btn" type="radio" class="inputRadio"checked/><label>Very dissatisfied</label>
+        </form>
+    </div>
+    <div>
+        <p>Do you feel valued at work?</p>
+        <form action="#">
+            <input name="btn" type="radio"><label>Yes</label>
+            <input name="btn" type="radio" class="inputRadio"checked><label>No</label>
+        </form>          
+    </div>
+    <div>
+        <p>If no, Please Explain
+        </p>
+        <textarea cols="50"; rows="5">type here
         </textarea >
-</form>
-<form>
-    <p style="color:darkblue"><b>Does your job cause you stress or anxiety?</b></p>
-            <input name="btn" type="radio" class="inputRadio"checked> Yes
-                <input name="btn" type="radio" class="inputRadio"checked> No
-</form>
-    <p style="color:darkblue"><b>If yes, Please Explain</b></p>
-        <textarea
-        cols="50";
-        rows="5"
-        >
-type here
-        </textarea
-        cols="50";
-        rows="5"
-        >
-<form>
-    <p style="color:darkblue"><b>Are sufficient efforts made to solicit colleague opinions and feedbacks?</b></p>
-        <input name="btn" type="radio" class="inputRadio" checked> Yes
-            <input name="btn" type="radio" class="inputRadio" checked> No
-</form>
-    <p style="color:darkblue"><b>If Yes, Please Explain</b></p>
-        <textarea
-        cols="50";
-        rows="5"
-        >
-type here
-        </textarea
-        cols="50";
-        rows="5"
-        >
-    <p style="color:darkblue"><b>Please Provide Any Additional Feedbacks</b></p>
-        <textarea 
-        cols="50";
-        rows="5">
-type here
+    </div>
+    <div>
+        <p>Does your job cause you stress or anxiety?</p>
+        <form action="#">
+        <input name="btn" type="radio"><label>Yes</label>
+        <input name="btn" type="radio" class="inputRadio"checked><label>No</label>
+        </form>
+    </div>
+    <div>
+        <p>If yes, Please Explain</p>
+        <textarea cols="50"; rows="5">type here
         </textarea>
-<br/>
-        <div>
-            <input type="submit"; style="background-color:rgb(241, 143, 13);"/>
-        </div>
+    </div>
+    <div>
+        <p>Are sufficient efforts made to solicit colleague opinions and feedbacks?</p>
+        <form>
+        <input name="btn" type="radio"><label>Yes</label>
+        <input name="btn" type="radio" class="inputRadio"checked><label>No</label>
+        </form>
+    </div>
+    <div>
+        <p>If Yes, Please Explain</p>
+        <textarea cols="50"; rows="5">type here
+        </textarea>
+    </div>
+        <p>Please Provide Any Additional Feedbacks
+        </p>
+        <textarea cols="50"; rows="5">type here
+        </textarea>
+    <div class="submit__btn">
+        <input type="submit"/>
+    </div>
+</div>
 </body>
 </html>
