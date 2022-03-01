@@ -38,3 +38,7 @@ p {
 .submit__btn input:hover {
     background-color: darkgreen;
 }
+.submit__btn input:active {
+    background-color: black;
+    transform: translate(3px);
+}
